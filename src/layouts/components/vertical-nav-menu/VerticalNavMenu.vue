@@ -43,6 +43,11 @@
         :icon="icons.mdiHomeOutline"
       ></nav-menu-link>
       <nav-menu-link
+          title="Tables"
+          :to="{ name: 'simple-table' }"
+          :icon="icons.mdiTable"
+      ></nav-menu-link>
+      <nav-menu-link
         title="Account Settings"
         :to="{ name: 'pages-account-settings'}"
         :icon="icons.mdiAccountCogOutline"
@@ -82,11 +87,6 @@
         title="Cards"
         :to="{ name: 'cards' }"
         :icon="icons.mdiCreditCardOutline"
-      ></nav-menu-link>
-      <nav-menu-link
-        title="Tables"
-        :to="{ name: 'simple-table' }"
-        :icon="icons.mdiTable"
       ></nav-menu-link>
       <nav-menu-link
         title="Form Layouts"
