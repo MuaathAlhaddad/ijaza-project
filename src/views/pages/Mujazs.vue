@@ -1,13 +1,9 @@
 <template>
   <v-row>
-    <!-- fixed header -->
+
+    <create-mujaz-modal/>
+
     <v-col cols="12">
-      <v-btn
-          color="primary"
-          class="mb-2"
-      >
-        انشاء مجاز
-      </v-btn>
       <v-card>
         <v-card-title>المجازيين</v-card-title>
         <v-card-text>
@@ -22,9 +18,11 @@
 
 <script>
 import MujazsTable from '@/views/components/MujazsTable.vue'
+import CreateMujazModal from "@/views/pages/CreateMujazModal";
 
 export default {
   components: {
+    CreateMujazModal,
     MujazsTable,
   },
   setup() {

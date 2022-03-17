@@ -52,7 +52,7 @@
     </v-app-bar>
 
     <v-main>
-      <div class="app-content-container boxed-container pa-6">
+      <div class="app-content-container boxed-container pa-6 mt-12">
         <slot></slot>
       </div>
     </v-main>

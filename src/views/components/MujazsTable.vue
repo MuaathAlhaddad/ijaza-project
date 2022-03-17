@@ -13,6 +13,9 @@
             اسم المجاز
           </th>
           <th class="text-uppercase text-center">
+            المستوى
+          </th>
+          <th class="text-uppercase text-center">
             الدولة
           </th>
           <th class="text-uppercase text-center">
@@ -32,6 +35,15 @@
           <td class="text-center">
             {{ mujaz.name }}
           </td>
+          <td>
+            <v-chip
+              class="ma-2"
+              color="deep-purple"
+              outlined
+              >
+              {{ mujaz.level }}
+            </v-chip>
+          </td>
           <td class="text-center">
             {{ mujaz.country }}
           </td>
@@ -49,48 +61,10 @@
 
 <script>
 export default {
-  setup() {
-    const mujazs = [
-      {
-        id: 1,
-        name: 'معاذ اسماعيل قايد المرحم',
-        country: 'المملكة العربية السعودية',
-        sex: 'ذكر',
-        notes: 'لا يوجد',
-      },
-      {
-        id: 2,
-        name: 'معاذ اسماعيل قايد المرحم',
-        country: 'المملكة العربية السعودية',
-        sex: 'ذكر',
-        notes: 'لا يوجد',
-      },
-      {
-        id: 3,
-        name: 'معاذ اسماعيل قايد المرحم',
-        country: 'المملكة العربية السعودية',
-        sex: 'ذكر',
-        notes: 'لا يوجد',
-      },
-      {
-        id: 4,
-        name: 'معاذ اسماعيل قايد المرحم',
-        country: 'المملكة العربية السعودية',
-        sex: 'ذكر',
-        notes: 'لا يوجد',
-      },
-      {
-        id: 5,
-        name: 'معاذ اسماعيل قايد المرحم',
-        country: 'المملكة العربية السعودية',
-        sex: 'ذكر',
-        notes: 'لا يوجد',
-      },
-    ]
-
-    return {
-      mujazs,
-    }
+  computed: {
+    mujazs() {
+      return this.$store.state.mujazs
+    },
   },
 }
 </script>
