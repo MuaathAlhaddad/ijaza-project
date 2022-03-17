@@ -29,9 +29,9 @@ const routes = [
     component: () => import('@/views/cards/Card.vue'),
   },
   {
-    path: '/simple-table',
-    name: 'simple-table',
-    component: () => import('@/views/simple-table/SimpleTable.vue'),
+    path: '/mujazs',
+    name: 'mujazs',
+    component: () => import('@/views/pages/Mujazs.vue'),
   },
   {
     path: '/form-layouts',

@@ -1,6 +1,6 @@
 @import './mixins';
 @import '~vuetify/src/styles/styles.sass';
-
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 // ————————————————————————————————————
 //* ——— Color
 // ————————————————————————————————————
@@ -48,7 +48,9 @@
 // ————————————————————————————————————
 //* ——— Typography
 // ————————————————————————————————————
-
+.v-application {
+    font-family: 'Tajawal', sans-serif;
+}
 //
 //* ——— Font Sizes ——————————————————
 //
